@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>对grid的一点见解</title>
+    <url>/2077/07/07/grid/</url>
+    <content><![CDATA[<p>  作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发<a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">传送门</a></p>
+<h2 id="grid的优势与劣势"><a href="#grid的优势与劣势" class="headerlink" title="grid的优势与劣势"></a>grid的优势与劣势</h2><p>  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果忽略grid的劣势的话，它一定是最强大的css布局方案。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>test</title>
     <url>/2021/11/05/test/</url>
     <content><![CDATA[]]></content>
@@ -21,13 +28,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>对grid的一点见解</title>
-    <url>/2077/07/07/grid/</url>
-    <content><![CDATA[<p>  作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发<a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">传送门</a></p>
-<h2 id="grid的优势与劣势"><a href="#grid的优势与劣势" class="headerlink" title="grid的优势与劣势"></a>grid的优势与劣势</h2><p>  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果忽略grid的劣势的话，它一定是最强大的css布局方案。</p>
 ]]></content>
   </entry>
 </search>
