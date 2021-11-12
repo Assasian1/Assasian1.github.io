@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2021/11/05/3/</loc>
-    <lastmod>2021-11-12</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2021/11/05/2/</loc>
-    <lastmod>2021-11-10</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2021/11/05/%E5%BB%96%E7%A5%9E%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2021-11-09</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2021/11/05/1/</loc>
-    <lastmod>2021-11-05</lastmod>
-  </url>
-  <url>
     <loc>http://example.com/2021/11/05/test/</loc>
-    <lastmod>2021-11-05</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2021/11/05/%E7%BB%99%E7%BC%BA%E5%A4%B1GMS%E7%9A%84MIUI12-5%E8%A3%85%E4%B8%8AGMS/</loc>
     <lastmod>2021-11-05</lastmod>
   </url>
   <url>
