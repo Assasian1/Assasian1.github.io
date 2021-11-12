@@ -15,11 +15,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2021/11/05/test/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/11/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -38,18 +33,23 @@
 ]]></content>
   </entry>
   <entry>
+    <title>test</title>
+    <url>/2021/11/05/test/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Assasian的第一篇文章</title>
+    <url>/2021/11/05/%E5%BB%96%E7%A5%9E%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p><strong>test</strong></p>
+]]></content>
+  </entry>
+  <entry>
     <title>给缺失GMS的MIUI12-5装上GMS</title>
     <url>/2021/11/05/%E7%BB%99%E7%BC%BA%E5%A4%B1GMS%E7%9A%84MIUI12-5%E8%A3%85%E4%B8%8AGMS/</url>
     <content><![CDATA[<p><img src="https://img.shiyunhong.com/photos/2021080501.webp"><br>MIUI12.5更新至Android11之后，小米非旗舰机安装GMS变得较为困难<span id="more"></span>但是，同为Android11的国际版MIUI，都是预装GMS了的，且能正常使用，可见，这一定是MIUI团队故意为之<br>后来我在知乎上找到篇文章（<a href="https://zhuanlan.zhihu.com/p/387997993">折腾小米8 MIUI 12.5 安装Google GMS套件 （需unlock，非root方案）
 </a>），遇到系统的情况，然鹅，他是Android10的MIUI12.5，但其笔者称原理类似，将国际版相关的xml文件和apk文件移动到system对应路径中，但是，想要把文件移动到system可不简单，还得将system挂载读写，然后我试了各种办法，还是没办法挂载读写，据闻，如今想要给MIUI挂载读写system，通常是刷入官改包，我又看了一下我的sysyem目录可用空间，绝了，2.79MB……<br>后来得知了一款名为<strong>WeebGApps</strong>的的MAGISK模块：<a href="https://t.me/WeebGAppsChannel">Weeb GApps Channel</a><br><img src="https://img.shiyunhong.com/photos/2021080502.webp"><br>直接使用Magisk刷入后重启即可<br>此插件实现原理：<em>你解压一看就明白了，只是将上述文章方法所需文件通过Magisk挂载到system</em></p>
 <hr>
 <p>另外，如果出现Google Play服务无限闪退的情况（但仍能使用），取消对其的Magisk Hide即可</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Assasian的第一篇文章</title>
-    <url>/2021/11/05/%E5%BB%96%E7%A5%9E%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p><strong>test</strong></p>
 ]]></content>
   </entry>
 </search>
