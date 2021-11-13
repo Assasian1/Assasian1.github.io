@@ -191,7 +191,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-12 20:58:22" itemprop="dateModified" datetime="2021-11-12T20:58:22+08:00">2021-11-12</time>
+        <time title="Modified: 2021-11-13 15:02:31" itemprop="dateModified" datetime="2021-11-13T15:02:31+08:00">2021-11-13</time>
       </span>
 
   
@@ -204,8 +204,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>  作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">传送门</a></p>
-<h2 id="grid的优势与劣势"><a href="#grid的优势与劣势" class="headerlink" title="grid的优势与劣势"></a>grid的优势与劣势</h2><p>  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果忽略grid的劣势的话，它一定是最强大的css布局方案。</p>
+          <p>  作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。<br>  这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发    <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">传送门</a></p>
+<h2 id="grid的优势与劣势"><a href="#grid的优势与劣势" class="headerlink" title="grid的优势与劣势"></a>grid的优势与劣势</h2><p>  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果暂且忽略grid的劣势的话，我认为它一定成称得上是最强大的css布局方案。<br>  但grid劣势也很明显，那就是兼容性差，grid只能支持高版本的浏览器，比如说chrome只支持57版本以上，ie只兼容11版本以上。而在开发过程中，兼容性往往比性能更值得考虑。<br>! [grid兼容性](屏幕截图 2021-11-13 142355.png)<br>! [flex兼容性](屏幕截图 2021-11-13 142704.png)</p>
+<h2 id="grid的使用"><a href="#grid的使用" class="headerlink" title="grid的使用"></a>grid的使用</h2><p>  我们先创建6个盒子</p>
+<pre><code class="html">    &lt;div id=&quot;box&quot;&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: red;&quot;&gt;1&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: orange;&quot;&gt;2&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: yellow;&quot;&gt;3&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: green;&quot;&gt;4&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: blue;&quot;&gt;5&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: purple;&quot;&gt;6&lt;/div&gt;
+  &lt;/div&gt;
+
+</code></pre>
 
       
     </div>

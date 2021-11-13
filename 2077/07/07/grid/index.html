@@ -21,15 +21,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发传送门 grid的优势与劣势  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果忽略grid的劣">
+<meta name="description" content="作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。  这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发    传送门 grid的优势与劣势  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果暂且">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对grid的一点见解">
 <meta property="og:url" content="http://example.com/2077/07/07/grid/index.html">
 <meta property="og:site_name" content="Assasian的博客">
-<meta property="og:description" content="作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发传送门 grid的优势与劣势  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果忽略grid的劣">
+<meta property="og:description" content="作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。  这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发    传送门 grid的优势与劣势  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果暂且">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2077-07-06T23:07:07.000Z">
-<meta property="article:modified_time" content="2021-11-12T12:58:22.484Z">
+<meta property="article:modified_time" content="2021-11-13T07:02:31.490Z">
 <meta property="article:author" content="Assasian">
 <meta property="article:tag" content="关键词">
 <meta name="twitter:card" content="summary">
@@ -111,7 +111,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#grid%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%8A%A3%E5%8A%BF"><span class="nav-number">1.</span> <span class="nav-text">grid的优势与劣势</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#grid%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%8A%A3%E5%8A%BF"><span class="nav-number">1.</span> <span class="nav-text">grid的优势与劣势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#grid%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">grid的使用</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -195,7 +195,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-12 20:58:22" itemprop="dateModified" datetime="2021-11-12T20:58:22+08:00">2021-11-12</time>
+        <time title="Modified: 2021-11-13 15:02:31" itemprop="dateModified" datetime="2021-11-13T15:02:31+08:00">2021-11-13</time>
       </span>
 
   
@@ -208,8 +208,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>  作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">传送门</a></p>
-<h2 id="grid的优势与劣势"><a href="#grid的优势与劣势" class="headerlink" title="grid的优势与劣势"></a>grid的优势与劣势</h2><p>  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果忽略grid的劣势的话，它一定是最强大的css布局方案。</p>
+        <p>  作为一个写博客的新手，我此刻的心情是无比激动的。想了很久第一篇博客的内容，最终还 是决定分享一下最近学习的css语法中的grid布局方案。<br>  这里推荐一下阮一峰老师的博客，讲解的十分到位，给了我极大的启发    <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">传送门</a></p>
+<h2 id="grid的优势与劣势"><a href="#grid的优势与劣势" class="headerlink" title="grid的优势与劣势"></a>grid的优势与劣势</h2><p>  在使用grid的过程中，我能明显感觉到grid的强大，它相较于flex最大的不同就是，flex还局限于一维布局，但grid已经拓展到了二维布局，如果暂且忽略grid的劣势的话，我认为它一定成称得上是最强大的css布局方案。<br>  但grid劣势也很明显，那就是兼容性差，grid只能支持高版本的浏览器，比如说chrome只支持57版本以上，ie只兼容11版本以上。而在开发过程中，兼容性往往比性能更值得考虑。<br>! [grid兼容性](屏幕截图 2021-11-13 142355.png)<br>! [flex兼容性](屏幕截图 2021-11-13 142704.png)</p>
+<h2 id="grid的使用"><a href="#grid的使用" class="headerlink" title="grid的使用"></a>grid的使用</h2><p>  我们先创建6个盒子</p>
+<pre><code class="html">    &lt;div id=&quot;box&quot;&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: red;&quot;&gt;1&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: orange;&quot;&gt;2&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: yellow;&quot;&gt;3&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: green;&quot;&gt;4&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: blue;&quot;&gt;5&lt;/div&gt;
+      &lt;div id=&quot;box1&quot; style=&quot;background-color: purple;&quot;&gt;6&lt;/div&gt;
+  &lt;/div&gt;
+
+</code></pre>
 
     </div>
 
