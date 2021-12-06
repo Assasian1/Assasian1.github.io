@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="js基础外链式使用script标签的src属性引入指定.js文件，打开页面就会执行 变量var用于定义变量，类比python中的def, 如： 12var num &#x3D; 100alert(num)  变量命名规则:要区分大小写，不能用关键字，最好用直观的名称，如：name,age 注释：1234&#x2F;&#x2F;是单行注释&#x2F;*是多行注释是多行注释*&#x2F;    基本数据类型:数值类型：常见计数如100，-100.25">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Assasian的博客">
+<meta property="og:url" content="http://example.com/2021/12/04/js%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Assasian的博客">
+<meta property="og:description" content="js基础外链式使用script标签的src属性引入指定.js文件，打开页面就会执行 变量var用于定义变量，类比python中的def, 如： 12var num &#x3D; 100alert(num)  变量命名规则:要区分大小写，不能用关键字，最好用直观的名称，如：name,age 注释：1234&#x2F;&#x2F;是单行注释&#x2F;*是多行注释是多行注释*&#x2F;    基本数据类型:数值类型：常见计数如100，-100.25">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/19773/AppData/Roaming/Typora/typora-user-images/image-20211204142608330.png">
+<meta property="article:published_time" content="2021-12-04T04:01:31.256Z">
+<meta property="article:modified_time" content="2021-12-06T10:41:20.187Z">
+<meta property="article:author" content="Assasian">
+<meta property="article:tag" content="关键词">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/19773/AppData/Roaming/Typora/typora-user-images/image-20211204142608330.png">
+
+
+<link rel="canonical" href="http://example.com/2021/12/04/js%E5%9F%BA%E7%A1%80/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/12/04/js%E5%9F%BA%E7%A1%80/","path":"2021/12/04/js基础/","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | Assasian的博客</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Assasian的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Assasian的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">子标题</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">js基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%98%E9%87%8F"><span class="nav-number">1.0.1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">变量命名规则:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A%EF%BC%9A"><span class="nav-number">1.0.1.0.2.</span> <span class="nav-text">注释：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.0.1.0.3.</span> <span class="nav-text">基本数据类型:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="nav-number">1.0.1.0.3.1.</span> <span class="nav-text">数值类型：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%EF%BC%8C%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B-Boolean"><span class="nav-number">1.0.1.0.4.</span> <span class="nav-text">字符串类型，布尔类型(Boolean)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A9%BA%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.0.1.0.5.</span> <span class="nav-text">空类型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E6%8D%A2%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.0.2.</span> <span class="nav-text">转换类型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BD%AC%E6%95%B0%E5%80%BC"><span class="nav-number">1.0.2.0.1.</span> <span class="nav-text">转数值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.0.2.0.2.</span> <span class="nav-text">转字符串</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BD%AC%E5%B8%83%E5%B0%94"><span class="nav-number">1.0.2.0.3.</span> <span class="nav-text">转布尔</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.0.3.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AE%97%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.0.3.0.1.</span> <span class="nav-text">算数运算符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.0.3.0.2.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.0.3.0.3.</span> <span class="nav-text">逻辑运算符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.0.4.</span> <span class="nav-text">条件分支语句</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#if"><span class="nav-number">1.0.4.0.1.</span> <span class="nav-text">if</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#switch"><span class="nav-number">1.0.4.0.2.</span> <span class="nav-text">switch</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.0.5.</span> <span class="nav-text">循环语句</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#while"><span class="nav-number">1.0.5.0.1.</span> <span class="nav-text">while</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#do-while"><span class="nav-number">1.0.5.0.2.</span> <span class="nav-text">do while</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#for"><span class="nav-number">1.0.5.0.3.</span> <span class="nav-text">for</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.0.6.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">1.0.7.</span> <span class="nav-text">作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.0.8.</span> <span class="nav-text">对象数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E7%BB%84-Array"><span class="nav-number">1.0.9.</span> <span class="nav-text">数组(Array)</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Assasian</p>
+  <div class="site-description" itemprop="description">描述</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/04/js%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Assasian">
+      <meta itemprop="description" content="描述">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Assasian的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-04 12:01:31" itemprop="dateCreated datePublished" datetime="2021-12-04T12:01:31+08:00">2021-12-04</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-06 18:41:20" itemprop="dateModified" datetime="2021-12-06T18:41:20+08:00">2021-12-06</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="js基础"><a href="#js基础" class="headerlink" title="js基础"></a>js基础</h1><p>外链式使用script标签的src属性引入指定.js文件，<font color=red>打开页面就会执行<font></p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>var用于定义变量，类比python中的def,</p>
+<p>如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">100</span></span><br><span class="line">alert(num)</span><br></pre></td></tr></table></figure>
+
+<h5 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则:"></a>变量命名规则:</h5><p>要区分大小写，不能用关键字，最好用直观的名称，如：name,age</p>
+<h5 id="注释："><a href="#注释：" class="headerlink" title="注释："></a>注释：</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//是单行注释</span></span><br><span class="line"><span class="comment">/*是多行注释</span></span><br><span class="line"><span class="comment">是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型:"></a>基本数据类型:</h5><h6 id="数值类型："><a href="#数值类型：" class="headerlink" title="数值类型："></a>数值类型：</h6><p>常见计数如100，-100.25</p>
+<p>科学技术法2e5表示2乘以10的5次方</p>
+<p>0x打头表示16进制，0o开头表示八进制，0b打头表示二进制</p>
+<h5 id="字符串类型，布尔类型-Boolean"><a href="#字符串类型，布尔类型-Boolean" class="headerlink" title="字符串类型，布尔类型(Boolean)"></a>字符串类型，布尔类型(Boolean)</h5><p>不必多说</p>
+<h5 id="空类型"><a href="#空类型" class="headerlink" title="空类型"></a>空类型</h5><p>null表示有个空值</p>
+<p>undefined表示无值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> __<span class="comment">//用于检测数据类型</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> ww)<span class="comment">//将会输出ww的数据类型</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="转换类型"><a href="#转换类型" class="headerlink" title="转换类型"></a>转换类型</h3><h5 id="转数值"><a href="#转数值" class="headerlink" title="转数值"></a>转数值</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.Number()</span></span><br><span class="line"><span class="keyword">var</span> a=<span class="string">&quot;100&quot;</span></span><br><span class="line"><span class="keyword">var</span> a=<span class="built_in">Number</span>(a)<span class="comment">//将数据类型转换成数值类型(100)</span></span><br><span class="line"><span class="keyword">var</span> s=<span class="string">&quot;ac&quot;</span></span><br><span class="line"><span class="keyword">var</span> s=<span class="built_in">Number</span>(s)</span><br><span class="line"><span class="built_in">console</span>.log(s)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> s)<span class="comment">//这里会输出NaN,表示是数值但不是数字</span></span><br><span class="line"><span class="comment">//2.parseInt()</span></span><br><span class="line"><span class="comment">//只有第一位数字不是数字才会输出NaN，且只能定位到整数</span></span><br><span class="line"><span class="comment">//如：</span></span><br><span class="line"><span class="keyword">var</span> s=<span class="string">&quot;100ac&quot;</span></span><br><span class="line"><span class="keyword">var</span> s=<span class="built_in">parseInt</span>(s)<span class="comment">//这里s的值将会变成100</span></span><br><span class="line"><span class="comment">//3.parseFloat()</span></span><br><span class="line"><span class="comment">//能够定位到小数，同时也只有第一位数字不是数字才会输出NaN</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="转字符串"><a href="#转字符串" class="headerlink" title="转字符串"></a>转字符串</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.Srting()</span></span><br><span class="line"><span class="comment">//2.toString()</span></span><br><span class="line"><span class="comment">//语法格式略有不同</span></span><br><span class="line"><span class="keyword">var</span> a=a.toString()</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="转布尔"><a href="#转布尔" class="headerlink" title="转布尔"></a>转布尔</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=<span class="built_in">Boolean</span>()</span><br><span class="line"><span class="comment">//在js中，只有0，NaN,&quot;&quot;(空字符串)，undefined,null会被转换成False,其余都会被转换成True</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h5 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h5><p>+：1.两边都是数字或布尔值时会进行数学运算</p>
+<p>​       2.有一边是字符串时会进行字符串拼接</p>
+<p>-,*,/,%都只能进行数学运算</p>
+<p>=用于赋值</p>
+<h5 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h5><p>==：等于比较(只比较值)</p>
+<p>===：全等于(还要比较数据类型)</p>
+<p>!==:不等于</p>
+<p>!==:不全等于</p>
+<h5 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h5><p>&amp;&amp;(与运算符):两边都为true才为true</p>
+<p>||(或运算符)：有一边为true则为true</p>
+<p>||!(非运算符/取反运算符):顾名思义</p>
+<p>++:</p>
+<p>1.++变量</p>
+<p>2.变量++</p>
+<p>都是自身值加一，不同点是参与运算时前者先将变量值改变，后者先让变量值参与运算再加一</p>
+<p>–同理</p>
+<h3 id="条件分支语句"><a href="#条件分支语句" class="headerlink" title="条件分支语句"></a>条件分支语句</h3><h5 id="if"><a href="#if" class="headerlink" title="if"></a>if</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">()内为条件，&#123;&#125;内为执行语句</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">if</span>()&#123;&#125;</span><br><span class="line"><span class="keyword">if</span>()&#123;&#125;<span class="keyword">else</span>&#123;&#125;</span><br><span class="line"><span class="keyword">if</span>()&#123;&#125;<span class="keyword">else</span> <span class="keyword">if</span>()&#123;&#125;...else <span class="keyword">if</span>()&#123;&#125;...<span class="comment">//(不满足第一个条件才会考虑第二个条件)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>()&#123;<span class="comment">//()中是变量名</span></span><br><span class="line">    <span class="keyword">case</span> __ :<span class="comment">//条件</span></span><br><span class="line">    __<span class="comment">//(要执行的语句，变量完全满足时会执行)</span></span><br><span class="line">    <span class="keyword">break</span><span class="comment">//用于结束Switch语句，如果没有break，将会自动向下穿透，不考虑条件执行下面的所有语句</span></span><br><span class="line">    <span class="keyword">case</span> __ :</span><br><span class="line">    __</span><br><span class="line">    <span class="attr">default</span>:</span><br><span class="line">    __<span class="comment">//所以代码都不符合时会执行</span></span><br><span class="line">    .....<span class="comment">//当case完全符合时则会执行后面的语句</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><h5 id="while"><a href="#while" class="headerlink" title="while"></a>while</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(条件)&#123;执行语句&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="do-while"><a href="#do-while" class="headerlink" title="do while"></a>do while</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    执行语句</span><br><span class="line">&#125;<span class="keyword">while</span>(条件)<span class="comment">//与while的不同是会先执行一次</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="for"><a href="#for" class="headerlink" title="for"></a>for</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="number">1</span>定义初始变量 ;<span class="number">2</span>条件判断; <span class="number">4</span>改变初始值)&#123;</span><br><span class="line">    <span class="number">3</span>执行语句</span><br><span class="line">&#125;<span class="comment">//按照1234的顺序执行</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>可以类比python中的函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;<span class="comment">//a表示盒子名字，()内书写的是形参，即只能在函数中调用，这里也可以类比python</span></span><br><span class="line">    执行内容</span><br><span class="line">    <span class="keyword">return</span> __<span class="comment">//返回函数结果</span></span><br><span class="line">&#125;<span class="comment">//定义阶段</span></span><br><span class="line">a()<span class="comment">//调用阶段，()中是实参(即赋值给形参)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p><img src="C:\Users\19773\AppData\Roaming\Typora\typora-user-images\image-20211204142608330.png" alt="image-20211204142608330"></p>
+<h3 id="对象数据类型"><a href="#对象数据类型" class="headerlink" title="对象数据类型"></a>对象数据类型</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=&#123;键(key):值(value),键(key):值(value)&#125;<span class="comment">//,分割</span></span><br><span class="line"><span class="comment">//两种方法用于为a增加键值对</span></span><br><span class="line">a.name=b</span><br><span class="line">a[<span class="string">&quot;age&quot;</span>]=<span class="number">18</span><span class="comment">//注意[]中是字符串</span></span><br><span class="line"><span class="keyword">delete</span> a.name<span class="comment">//用于删除键值对</span></span><br><span class="line"><span class="built_in">console</span>.log(name)<span class="comment">//这里访问的是键的值</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="数组-Array"><a href="#数组-Array" class="headerlink" title="数组(Array)"></a>数组(Array)</h3><p>有序的数据集合</p>
+<p>可以存储任何数据类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=[<span class="number">100</span>,<span class="literal">true</span>,<span class="string">&quot;鬼！&quot;</span>]<span class="comment">//索引为：从0开始依次加1，同python</span></span><br><span class="line">a[<span class="number">2</span>]<span class="comment">//访问数组第三个数据</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">200</span><span class="comment">//直接赋值</span></span><br><span class="line">a.length<span class="comment">//用于获取长度</span></span><br><span class="line"><span class="comment">//如果：</span></span><br><span class="line">a.length=<span class="number">3</span><span class="comment">//则会从最后开始删除数据</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/11/05/test/" rel="prev" title="test">
+                  <i class="fa fa-chevron-left"></i> test
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2077/07/07/grid/" rel="next" title="对grid的一点见解">
+                  对grid的一点见解 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Assasian</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+
+</body>
+</html>
